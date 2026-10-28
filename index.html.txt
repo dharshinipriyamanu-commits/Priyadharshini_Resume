@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Priyadharshini Parthiban</title>
+  <style>
+    :root {
+      --accent: #0B7F74;
+      --ink: #14213D;
+    }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #F3F5F8;
+      color: var(--ink);
+      line-height: 1.6;
+      margin: 0;
+    }
+    .wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+    h1 { font-size: 3rem; }
+    p { color: var(--accent); }
+    section { padding: 3rem 0; border-top: 1px solid #D9DFE8; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+
+    <header>
+      <h1>Priyadharshini Parthiban</h1>
+      <p>Lead Data Scientist</p>
+    </header>
+
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>Lead Data Scientist, Indium Softwares (2017 to present)</li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>
