@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Priyadharshini Parthiban</title>
+  <style>
+    :root {
+      --accent: #0B7F74;
+      --ink: #14213D;
+    }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #F3F5F8;
+      color: var(--ink);
+      line-height: 1.6;
+      margin: 0;
+    }
+    .wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+    h1 { font-size: 3rem; }
+    .role { color: var(--accent); font-weight: 600; }
+    section { padding: 3rem 0; border-top: 1px solid #D9DFE8; }
+    .edu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    }
+    .edu div {
+    background: white;
+    border: 1px solid #D9DFE8;
+    border-radius: 10px;
+    padding: 1.1rem 1.25rem;
+    }
+    .projects details {
+    background: white;
+    border: 1px solid #D9DFE8;
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+    }
+    .projects summary {
+    cursor: pointer;
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    }
+    .projects .body { padding: 0 1.25rem 1rem; }
+    .projects .tech { color: var(--accent); font-weight: 600; margin: 0 0 0.5rem; }
+
+    .filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem; }
+    .filters button {
+    font: inherit;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid #D9DFE8;
+    background: white;
+    border-radius: 999px;
+    cursor: pointer;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .chips span {
+    padding: 0.25rem 0.7rem;
+    background: white;
+    border: 1px solid #D9DFE8;
+    border-radius: 6px;
+    }
+    .group[hidden] { display: none; }
+  </style>
+  <!-- 
+<header class="hero">
+  <div>
+    <h1>Priyadharshini Parthiban</h1>
+    <p class="role">Lead Data Scientist</p>
+    <p>Over 9.5 years turning messy data into models, dashboards and APIs that teams use to decide.</p>
+  </div>
+  <div class="photo">Add a photo or chart here</div>
+</header>
+-->
+</head>
+<body>
+  <main class="wrap">
+
+    <header>
+      <h1>Priyadharshini Parthiban</h1>
+      <p class="role">Lead Data Scientist</p>
+    </header>
+      <h2>Experience</h2>
+      <ul>
+        <li>Lead Data Scientist, Indium Softwares (2017 to present)</li>
+      </ul>
+     <h2>About</h2>
+  <ul>
+    <li>9.5+ years building ML models, analytics and REST APIs in R, Python and PySpark.</li>
+    <li>Dashboards in R Shiny, Streamlit, Flask and QlikView.</li>
+    <li>Leads and mentors data science teams.</li>
+  </ul>
+  <h2>Education</h2>
+  <div class="edu">
+    <div>
+      <h3>Master of Computer Applications</h3>
+      <p>Madras University, Chennai</p>
+    </div>
+    <div>
+      <h3>Bachelor of Computer Applications</h3>
+      <p>Madras University, Chennai</p>
+    </div>
+  </div>
+
+  <h2>Experience</h2>
+  <ul>
+    <li>Lead Data Scientist, Indium Softwares Pvt Ltd (2017 to present)</li>
+    <li>Big Data Developer, MAANTT Global Service (Dec 2016 to Oct 2017)</li>
+    <li>BI, Collar Groups of Solution (Jul 2015 to Nov 2016)</li>
+  </ul>
+  <h2>Skills</h2>
+
+  <div class="filters">
+    <button data-g="all">All</button>
+    <button data-g="ml">ML</button>
+    <button data-g="ai">GenAI</button>
+    <button data-g="eng">Engineering</button>
+  </div>
+
+  <div class="group" data-g="ml">
+    <h3>Machine learning</h3>
+    <div class="chips"><span>Scikit-learn</span><span>XGBoost</span><span>Random Forests</span><span>Time series</span></div>
+  </div>
+
+  <div class="group" data-g="ai">
+    <h3>Generative AI</h3>
+    <div class="chips"><span>LangChain</span><span>RAG</span><span>AI agents</span><span>PyTorch</span></div>
+  </div>
+
+  <div class="group" data-g="eng">
+    <h3>Engineering</h3>
+    <div class="chips"><span>Python</span><span>R</span><span>Docker</span><span>Azure</span></div>
+  </div>
+</section>
+
+  </main>
+  <script>
+  document.querySelectorAll('.filters button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('.group').forEach(function (g) {
+        g.hidden = b.dataset.g !== 'all' && g.dataset.g !== b.dataset.g;
+      });
+    });
+  });
+</script>
+</body>
+</html>
